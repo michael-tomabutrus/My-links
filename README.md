@@ -1,2 +1,74 @@
 # My-links
 Welcome to my links 
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>My Accounts | حساباتي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #000000;
+      padding: 40px;
+      color: white;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 40px;
+      font-size: 22px;
+    }
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 25px;
+      width: 180px;
+      height: 180px;
+      text-decoration: none;
+      background: #0073e6;
+      color: white;
+      border-radius: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      transition: 0.3s;
+      vertical-align: middle;
+      line-height: 1.4;
+    }
+    a:hover {
+      background: #005bb5;
+    }
+    img.logo {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- صورة لوجو -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Aluminium_symbol.png" alt="Logo" class="logo">
+
+  <h1>🌐 My Accounts | حساباتي</h1>
+  <p>Select any account below | اختر أي حساب من الأسفل:</p>
+
+  <div class="links">
+    <!-- واتساب -->
+    <a href="https://wa.me/9647504595067" target="_blank">WhatsApp<br>واتساب</a>
+    <!-- ويشات -->
+    <a href="https://u.wechat.com/kKJe3BKQFZW1cDDqA-Ya7ao?s=4" target="_blank">WeChat<br>ويشات</a>
+    <!-- باقي الحسابات -->
+    <a href="https://facebook.com/michael.albaze" target="_blank">Facebook<br>فيسبوك</a>
+    <a href="https://instagram.com/michael.potros" target="_blank">Instagram<br>إنستغرام</a>
+    <a href="https://tiktok.com/@username" target="_blank">TikTok<br>تيك توك</a>
+		    <a href="https://youtube.com/michaeltuma-l6e" target="_blank">YouTube<br>يوتيوب</a>
+  </div>
+
+</body>
+</html>

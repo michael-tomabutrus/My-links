@@ -1,74 +1,129 @@
-# My-links
-Welcome to my links 
 <!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>My Accounts | حساباتي</title>
+  <title>حساباتي</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #000000;
-      padding: 40px;
+      background: #000;
       color: white;
+      padding: 30px;
+      position: relative;
     }
-    h1 {
-      margin-bottom: 10px;
+    /* أشكال هندسية ذهبية كظل */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 20%, rgba(255,215,0,0.2), transparent 40%),
+                  radial-gradient(circle at 80% 30%, rgba(255,215,0,0.15), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(255,215,0,0.1), transparent 40%);
+      z-index: 0;
     }
-    p {
-      margin-bottom: 40px;
-      font-size: 22px;
+    .content {
+      position: relative;
+      z-index: 1;
     }
-    a {
-      display: inline-block;
-      margin: 15px;
-      padding: 25px;
-      width: 180px;
-      height: 180px;
-      text-decoration: none;
-      background: #0073e6;
-      color: white;
-      border-radius: 15px;
-      font-size: 22px;
-      font-weight: bold;
-      transition: 0.3s;
-      vertical-align: middle;
+    .top-right {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-align: right;
+      font-size: 14px;
       line-height: 1.4;
     }
-    a:hover {
-      background: #005bb5;
+    .top-left {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.4;
     }
-    img.logo {
-      width: 200px;
-      margin-bottom: 30px;
+    .name {
+      font-size: 16px;
+      font-weight: bold;
     }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       gap: 20px;
+      margin-top: 100px;
+    }
+    .icon-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #111;
+      border-radius: 20px;
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .icon-btn:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
+    .icon-btn img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <!-- صورة لوجو -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Aluminium_symbol.png" alt="Logo" class="logo">
-
-  <h1>🌐 My Accounts | حساباتي</h1>
-  <p>Select any account below | اختر أي حساب من الأسفل:</p>
-
-  <div class="links">
-    <!-- واتساب -->
-    <a href="https://wa.me/9647504595067" target="_blank">WhatsApp<br>واتساب</a>
-    <!-- ويشات -->
-    <a href="https://u.wechat.com/kKJe3BKQFZW1cDDqA-Ya7ao?s=4" target="_blank">WeChat<br>ويشات</a>
-    <!-- باقي الحسابات -->
-    <a href="https://facebook.com/michael.albaze" target="_blank">Facebook<br>فيسبوك</a>
-    <a href="https://instagram.com/michael.potros" target="_blank">Instagram<br>إنستغرام</a>
-    <a href="https://tiktok.com/@username" target="_blank">TikTok<br>تيك توك</a>
-		    <a href="https://youtube.com/michaeltuma-l6e" target="_blank">YouTube<br>يوتيوب</a>
+  <div class="top-right">
+    <div class="name">مايكل توما بطرس</div>
+    <div>مصنع ننكي لصناعة الالمنيوم</div>
+    <div>العراق زاخو طريق ابراهيم الخليل</div>
+  </div>
+  <div class="top-left">
+    <div class="name">Michael Toma Butrus</div>
+    <div>Nenky Factory for Aluminum</div>
+    <div>Iraq, Zakho, Ibrahim Al-Khalil Road</div>
   </div>
 
+  <div class="content">
+    <h1>Welcome 👋 أهلاً بك</h1>
+    <p>هنا كل حساباتي / Here are all my accounts:</p>
+    <div class="grid">
+      <a class="icon-btn" href="https://wa.me/009647504595067" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        واتساب / WhatsApp
+      </a>
+      <a class="icon-btn" href="https://weixin.qq.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384029.png" alt="WeChat">
+        ويشات / WeChat
+      </a>
+      <a class="icon-btn" href="https://facebook.com/michael.albaze" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        فيسبوك / Facebook
+      </a>
+      <a class="icon-btn" href="https://instagram.com/michael.potros" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        إنستغرام / Instagram
+      </a>
+      <a class="icon-btn" href="https://tiktok.com/@michaeltoma36" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+        تيك توك / TikTok
+      </a>
+      <a class="icon-btn" href="https://www.google.com/maps?q=37.1385253,42.6513713" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Maps">
+        العنوان / Address
+      </a>
+      <a class="icon-btn" href="mailto:michael.potros@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        ايميل / Email
+      </a>
+    </div>
+  </div>
 </body>
 </html>
